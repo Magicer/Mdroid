@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/gankFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="xyz.magicer.mdroid.ui.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/systemFragment"
+        android:name="xyz.magicer.mdroid.ui.SystemFragment"
+        android:label="体系"
+        tools:layout="@layout/fragment_system" />
+    <fragment
+        android:id="@+id/gankFragment"
+        android:name="xyz.magicer.mdroid.ui.GankFragment"
+        android:label="干货"
+        tools:layout="@layout/fragment_gank" />
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="xyz.magicer.mdroid.ui.MineFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_mine" />
+
+</navigation>

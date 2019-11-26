@@ -1,20 +1,17 @@
 package xyz.magicer.mdroid.model
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import xyz.magicer.mdroid.base.BaseRepository
-import xyz.magicer.mdroid.base.TodayResult
 import xyz.magicer.mdroid.base.Result
 import xyz.magicer.mdroid.http.GankApi
+import xyz.magicer.mdroid.model.bean.TodayResult
+import xyz.magicer.mdroid.utils.logI
 
 class TodayRepository : BaseRepository() {
 
-
     suspend fun loadToday(): Result<TodayResult> {
         return getResult {
-            withContext(Dispatchers.IO) {
-                GankApi.create().getToday()
-            }
+            logI(Thread.currentThread().name)
+            GankApi.create().getToday()
         }
     }
 }

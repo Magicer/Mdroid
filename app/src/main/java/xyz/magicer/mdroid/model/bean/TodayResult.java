@@ -1,8 +1,6 @@
-package xyz.magicer.mdroid.base;
+package xyz.magicer.mdroid.model.bean;
 
 import java.util.List;
-
-import xyz.magicer.mdroid.model.bean.DayInfo;
 
 public class TodayResult {
 

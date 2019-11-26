@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="首页"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/systemFragment"
+        android:title="体系"
+        android:icon="@drawable/ic_explore_black_24dp"/>
+
+    <item
+        android:id="@+id/gankFragment"
+        android:title="干货"
+        android:icon="@drawable/ic_cloud_circle_black_24dp"/>
+
+    <item
+        android:id="@+id/mineFragment"
+        android:title="我的"
+        android:icon="@drawable/ic_account_box_black_24dp"/>
+</menu>
