@@ -20,6 +20,5 @@ class HomeActivity : AppCompatActivity() {
         bottomNav.selectedItemId = R.id.homeFragment
 
 
-
     }
 }

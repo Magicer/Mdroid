@@ -2,7 +2,7 @@ package xyz.magicer.mdroid.utils
 
 import android.util.Log
 
-const val DEFAULT_TAG = "mDroid"
+const val DEFAULT_TAG = "Magicer"
 
 
 fun logI(msg: String) {

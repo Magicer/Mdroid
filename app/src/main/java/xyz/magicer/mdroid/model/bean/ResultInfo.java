@@ -2,6 +2,8 @@ package xyz.magicer.mdroid.model.bean;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Objects;
+
 public class ResultInfo {
 
     /**
@@ -97,6 +99,27 @@ public class ResultInfo {
 
     public void setWho(String who) {
         this.who = who;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ResultInfo that = (ResultInfo) o;
+        return used == that.used &&
+                Objects.equals(id, that.id) &&
+                Objects.equals(createdAt, that.createdAt) &&
+                Objects.equals(desc, that.desc) &&
+                Objects.equals(publishedAt, that.publishedAt) &&
+                Objects.equals(source, that.source) &&
+                Objects.equals(type, that.type) &&
+                Objects.equals(url, that.url) &&
+                Objects.equals(who, that.who);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, createdAt, desc, publishedAt, source, type, url, used, who);
     }
 
     @Override

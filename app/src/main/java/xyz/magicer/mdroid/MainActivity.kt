@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         binding?.data = viewModel
         binding?.lifecycleOwner = this
         viewModel.loadToday()
-        viewModel.todayResult.observe(this, Observer {
-            logI("complete ===")
-        })
+//        viewModel.todayResult.observe(this, Observer {
+//            logI("complete ===")
+//        })
 
     }
 
