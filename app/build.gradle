@@ -69,6 +69,11 @@ dependencies {
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    kapt project(path: ':compile')
+    kapt project(path: ':compilekt')
+    implementation project(path: ':common')
+    implementation project(path: ':annotation')
+
 
 
 }

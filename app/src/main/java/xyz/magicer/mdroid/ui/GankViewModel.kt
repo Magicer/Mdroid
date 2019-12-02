@@ -14,16 +14,21 @@ import xyz.magicer.mdroid.utils.logI
 class GankViewModel : ViewModel() {
     private val liveData: MutableLiveData<TodayResult> = MutableLiveData()
 
+    init {
+        loadToday()
+    }
     //只暴露LiveData 而不是MutableLiveData
     val todayResult: LiveData<TodayResult>
         get() = liveData
 
     fun loadToday() {
+        logI("gankViewModel loadToday Start")
         viewModelScope.launch {
             val r = TodayRepository().loadToday()
             logI("currentThread ${Thread.currentThread().name}")
             when (r) {
                 is Success -> {
+                    logI("gankViewModel success ")
                     liveData.value = r.data
                 }
                 is Error -> {

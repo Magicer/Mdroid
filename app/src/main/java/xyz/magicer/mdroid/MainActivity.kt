@@ -10,10 +10,14 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import kotlinx.android.synthetic.main.activity_main.*
+import xyz.magicer.common.Test
+import xyz.magicer.common.TestKt
 import xyz.magicer.mdroid.databinding.ActivityMainBinding
 import xyz.magicer.mdroid.utils.logI
 import xyz.magicer.mdroid.viewmodel.TodayViewModel
 
+@Test
+@TestKt
 class MainActivity : AppCompatActivity() {
 
     var binding:ActivityMainBinding?=null

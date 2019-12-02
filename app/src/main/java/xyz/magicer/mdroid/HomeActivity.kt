@@ -14,7 +14,6 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         val navController = Navigation.findNavController(this,R.id.fragment)
 
-//        NavigationUI.setupWithNavController(bottomNav,navController)
         bottomNav.setupWithNavController(navController)
 
         bottomNav.selectedItemId = R.id.homeFragment
