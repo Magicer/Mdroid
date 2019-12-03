@@ -5,13 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.*
-import xyz.magicer.mdroid.base.Error
+import xyz.magicer.core.Error
 import xyz.magicer.mdroid.model.bean.TodayResult
-import xyz.magicer.mdroid.base.Result
-import xyz.magicer.mdroid.base.Success
+import xyz.magicer.core.Success
+import xyz.magicer.core.logI
 import xyz.magicer.mdroid.model.TodayRepository
-import xyz.magicer.mdroid.utils.logE
-import xyz.magicer.mdroid.utils.logI
 
 class TodayViewModel : ViewModel() {
 
@@ -42,11 +40,11 @@ class TodayViewModel : ViewModel() {
                     _todayResult.value = r.data
                 }
                 is Error -> {
-                    logE(r.exception.message?:"error")
+                    xyz.magicer.core.logE(r.exception.message ?: "error")
 
                 }
                 else -> {
-                    logE("else === ")
+                    xyz.magicer.core.logE("else === ")
                 }
             }
 

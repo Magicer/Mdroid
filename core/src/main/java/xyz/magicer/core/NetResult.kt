@@ -1,4 +1,4 @@
-package xyz.magicer.mdroid.base
+package xyz.magicer.core
 
 sealed class NetResult<out T>
 

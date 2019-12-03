@@ -1,7 +1,7 @@
 package xyz.magicer.mdroid.base
 
 import retrofit2.Response
-import xyz.magicer.mdroid.utils.logE
+import xyz.magicer.core.logE
 
 abstract class BaseRepository {
 
@@ -20,7 +20,7 @@ abstract class BaseRepository {
     }
 
     private fun <T> error(msg: String): Result<T> {
-        logE(msg)
+        xyz.magicer.core.logE(msg)
         return Result.error(msg)
     }
 }

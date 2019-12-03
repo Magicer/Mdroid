@@ -4,20 +4,15 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.Navigation
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
-import kotlinx.android.synthetic.main.activity_main.*
-import xyz.magicer.common.Test
-import xyz.magicer.common.TestKt
+import com.alibaba.android.arouter.facade.annotation.Route
+import xyz.magicer.annotation.Test
+import xyz.magicer.annotation.TestKt
 import xyz.magicer.mdroid.databinding.ActivityMainBinding
-import xyz.magicer.mdroid.utils.logI
 import xyz.magicer.mdroid.viewmodel.TodayViewModel
 
-@Test
-@TestKt
+//@Test
+//@TestKt
+@Route(path = "/app/main")
 class MainActivity : AppCompatActivity() {
 
     var binding:ActivityMainBinding?=null

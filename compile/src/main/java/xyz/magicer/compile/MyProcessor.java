@@ -17,7 +17,7 @@ import javax.annotation.processing.Filer;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.Modifier;
 
-import xyz.magicer.common.Test;
+import xyz.magicer.annotation.Test;
 
 @AutoService(MyProcessor.class)
 public class MyProcessor extends BasicAnnotationProcessor {

@@ -1,7 +1,6 @@
-package xyz.magicer.mdroid.utils
+package xyz.magicer.core
 
 import android.util.Log
-import xyz.magicer.mdroid.BuildConfig
 
 const val DEFAULT_TAG = "Magicer"
 

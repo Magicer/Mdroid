@@ -1,2 +1,2 @@
-include ':app', ':annotation', ':compile', ':common', ':compilekt'
+include ':app', ':annotation', ':compile', ':compilekt', ':core', ':login'
 rootProject.name='Mdroid'

@@ -5,11 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
-import xyz.magicer.mdroid.base.Error
-import xyz.magicer.mdroid.base.Success
+import xyz.magicer.core.Error
+import xyz.magicer.core.Success
 import xyz.magicer.mdroid.model.TodayRepository
 import xyz.magicer.mdroid.model.bean.TodayResult
-import xyz.magicer.mdroid.utils.logI
+import xyz.magicer.core.logI
 
 class GankViewModel : ViewModel() {
     private val liveData: MutableLiveData<TodayResult> = MutableLiveData()
@@ -17,6 +17,7 @@ class GankViewModel : ViewModel() {
     init {
         loadToday()
     }
+
     //只暴露LiveData 而不是MutableLiveData
     val todayResult: LiveData<TodayResult>
         get() = liveData
@@ -33,8 +34,6 @@ class GankViewModel : ViewModel() {
                 }
                 is Error -> {
 
-                }
-                else -> {
                 }
             }
 

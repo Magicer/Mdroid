@@ -5,7 +5,7 @@ import com.google.common.collect.SetMultimap
 import com.squareup.javapoet.JavaFile
 import com.squareup.javapoet.MethodSpec
 import com.squareup.javapoet.TypeSpec
-import xyz.magicer.common.TestKt
+import xyz.magicer.annotation.TestKt
 import java.io.IOException
 import javax.annotation.processing.Filer
 import javax.annotation.processing.ProcessingEnvironment

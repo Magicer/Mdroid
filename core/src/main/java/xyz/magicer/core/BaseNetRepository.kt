@@ -1,7 +1,6 @@
-package xyz.magicer.mdroid.base
+package xyz.magicer.core
 
 import retrofit2.Response
-import xyz.magicer.mdroid.utils.logE
 import java.io.IOException
 
 abstract class BaseNetRepository {
