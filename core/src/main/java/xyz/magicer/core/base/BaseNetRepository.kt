@@ -1,6 +1,9 @@
-package xyz.magicer.core
+package xyz.magicer.core.base
 
 import retrofit2.Response
+import xyz.magicer.core.bean.Error
+import xyz.magicer.core.bean.NetResult
+import xyz.magicer.core.bean.Success
 import java.io.IOException
 
 abstract class BaseNetRepository {

@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_gank.*
-import xyz.magicer.core.logI
+import xyz.magicer.core.utils.logI
 import xyz.magicer.mdroid.R
 import xyz.magicer.mdroid.adapter.GankAdapter
 

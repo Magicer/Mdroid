@@ -6,9 +6,10 @@ import androidx.databinding.DataBindingUtil
 import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
+import xyz.magicer.core.ModuleLogin
 import xyz.magicer.login.databinding.ActivityLoginBinding
 
-@Route(path = "/login/login")
+@Route(path = ModuleLogin.login)
 class LoginActivity : AppCompatActivity() {
 
     @Autowired

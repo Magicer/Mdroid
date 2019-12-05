@@ -5,11 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
-import xyz.magicer.core.Error
-import xyz.magicer.core.Success
+import xyz.magicer.core.bean.Error
+import xyz.magicer.core.bean.Success
 import xyz.magicer.mdroid.model.TodayRepository
 import xyz.magicer.mdroid.model.bean.TodayResult
-import xyz.magicer.core.logI
+import xyz.magicer.core.utils.logI
 
 class GankViewModel : ViewModel() {
     private val liveData: MutableLiveData<TodayResult> = MutableLiveData()

@@ -1,4 +1,4 @@
-package xyz.magicer.core
+package xyz.magicer.core.bean
 
 sealed class NetResult<out T>
 

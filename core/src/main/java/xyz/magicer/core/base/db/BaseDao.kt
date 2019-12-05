@@ -1,4 +1,4 @@
-package xyz.magicer.core
+package xyz.magicer.core.base.db
 
 import androidx.room.Delete
 import androidx.room.Insert

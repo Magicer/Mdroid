@@ -1,12 +1,16 @@
-package xyz.magicer.core
+package xyz.magicer.core.utils
 
 import android.util.Log
+import xyz.magicer.core.BuildConfig
 
 const val DEFAULT_TAG = "Magicer"
 
 
 fun logI(msg: String) {
-    logI(DEFAULT_TAG, msg)
+    logI(
+        DEFAULT_TAG,
+        msg
+    )
 }
 
 fun logI(tag: String, msg: String) {
@@ -18,7 +22,10 @@ fun logI(tag: String, msg: String) {
 
 
 fun logD(msg: String) {
-    logD(DEFAULT_TAG, msg)
+    logD(
+        DEFAULT_TAG,
+        msg
+    )
 }
 
 fun logD(tag: String, msg: String) {
@@ -29,7 +36,10 @@ fun logD(tag: String, msg: String) {
 }
 
 fun logE(msg: String) {
-    logE(DEFAULT_TAG, msg)
+    logE(
+        DEFAULT_TAG,
+        msg
+    )
 }
 
 fun logE(tag: String, msg: String) {
